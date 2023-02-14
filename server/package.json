@@ -1,0 +1,29 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.ts",
+  "scripts": {
+    "start:dev": "npx nodemon",
+    "build": "rimraf ./build",
+    "start": "node build && node build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "helmet": "^6.0.1",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.1.0",
+    "sharp": "^0.31.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.13.0",
+    "rimraf": "^4.1.2"
+  }
+}
